@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projects - Hariharaprasad R</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ffb400",
+                        "background-light": "#f0f0f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Anton", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-sans text-gray-800 dark:text-gray-300 antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Sidebar -->
+            <aside
+                class="w-full md:w-1/4 bg-primary text-gray-900 rounded-lg flex flex-col items-center justify-between p-8 space-y-8 h-fit sticky top-8">
+                <div class="text-center space-y-4">
+                    <img alt="Hariharaprasad R portrait"
+                        class="w-32 h-32 rounded-full border-4 border-gray-900 object-cover mx-auto"
+                        src="imgs/profile.jpg" />
+                    <div class="flex justify-center gap-4 mt-4">
+                        <a href="https://www.linkedin.com/in/hariharaprasad-r110703/"
+                            class="text-gray-900 hover:text-white transition-colors"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://github.com/Hariharaprasad-03"
+                            class="text-gray-900 hover:text-white transition-colors"><i
+                                class="fab fa-github text-xl"></i></a>
+                        <a href="https://leetcode.com/u/Hariharaprasad_03/"
+                            class="text-gray-900 hover:text-white transition-colors"><i class="fas fa-code text-xl"
+                                title="LeetCode"></i></a>
+                    </div>
+                    <nav class="flex flex-col space-y-4 text-center">
+                        <a class="uppercase font-bold tracking-wider hover:text-white transition-colors"
+                            href="index.html">About Me</a>
+                        <a class="uppercase font-bold tracking-wider hover:text-white transition-colors"
+                            href="Experience.html">Resume</a>
+                        <a class="uppercase font-bold tracking-wider text-gray-900 border-b-2 border-gray-900 pb-1"
+                            href="projects.html">Portfolio</a>
+                        <a class="uppercase font-bold tracking-wider hover:text-white transition-colors"
+                            href="achivemment&contact.html">Achievements & Contacts</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="w-full md:w-3/4">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 md:p-12">
+                    <div class="flex items-center mb-12">
+                        <div class="h-px bg-gray-900 dark:bg-gray-100 w-12 mr-4"></div>
+                        <h1 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-gray-100 tracking-wider">
+                            PROJECTS</h1>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Project Card 1 -->
+                        <div
+                            class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-50 dark:bg-gray-700 flex flex-col">
+                            <div
+                                class="h-48 bg-gray-300 dark:bg-gray-600 w-full object-cover flex items-center justify-center">
+                                <span class="material-icons text-6xl text-gray-400">face</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Face Detection Smart
+                                    Attendance</h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">Smart attendance
+                                    system
+                                    leveraging YOLO for real-time face detection and FaceNet for accurate facial
+                                    recognition. Integrated database for tracking and management.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">YOLO</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">FaceNet</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Python</span>
+                                </div>
+                                <a href="https://github.com/Hariharaprasad-03/SmartAttendatnceSystem_tpgit.git"
+                                    class="inline-flex items-center text-primary font-bold hover:underline mt-auto">
+                                    View Project <span class="material-icons text-sm ml-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div
+                            class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-50 dark:bg-gray-700 flex flex-col">
+                            <div
+                                class="h-48 bg-gray-300 dark:bg-gray-600 w-full object-cover flex items-center justify-center">
+                                <span class="material-icons text-6xl text-gray-400">show_chart</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Stock & Temperature
+                                    Prediction</h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">Developed RNN and
+                                    LSTM based
+                                    models to predict future stock prices using historic data. Capable of predicting
+                                    next day price based on previous four days.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">TensorFlow</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">LSTM</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">RNN</span>
+                                </div>
+                                <a href="https://github.com/Hariharaprasad-03/StockPrediction.git"
+                                    class="inline-flex items-center text-primary font-bold hover:underline mt-auto">
+                                    View Project <span class="material-icons text-sm ml-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3: Design Pattern & LLD -->
+                        <div
+                            class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-50 dark:bg-gray-700 flex flex-col">
+                            <div
+                                class="h-48 bg-gray-300 dark:bg-gray-600 w-full object-cover flex items-center justify-center">
+                                <span class="material-icons text-6xl text-gray-400">architecture</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Design Patterns & LLD
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">Comprehensive
+                                    implementation of various software design patterns and low-level system design
+                                    principles. Focuses on scalable and maintainable code architecture.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Java</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">OOPS</span>
+                                    <span class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Design
+                                        Patterns</span>
+                                </div>
+                                <a href="https://github.com/Hariharaprasad-03/Design-Patterns.git"
+                                    class="inline-flex items-center text-primary font-bold hover:underline mt-auto">
+                                    View Project <span class="material-icons text-sm ml-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Project Card 4: Java Web App -->
+                        <div
+                            class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-50 dark:bg-gray-700 flex flex-col">
+                            <div
+                                class="h-48 bg-gray-300 dark:bg-gray-600 w-full object-cover flex items-center justify-center">
+                                <span class="material-icons text-6xl text-gray-400">web</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Folder Management
+                                    System</h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">gineered using Java
+                                    OOP and Single Responsibility principles, this application utilizes the Composite
+                                    pattern for structure, Visitor for search, and Singleton for efficient JSON
+                                    serialization and state management.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Java</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Servlet/JSP</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">MySQL</span>
+                                </div>
+                                <a href="https://github.com/Hariharaprasad-03/FolderManagement-System.git"
+                                    class="inline-flex items-center text-primary font-bold hover:underline mt-auto">
+                                    View Project <span class="material-icons text-sm ml-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4: Java Web App -->
+                        <div
+                            class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-50 dark:bg-gray-700 flex flex-col">
+                            <div
+                                class="h-48 bg-gray-300 dark:bg-gray-600 w-full object-cover flex items-center justify-center">
+                                <span class="material-icons text-6xl text-gray-400">web</span>
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Java Web App</h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-grow">A robust web
+                                    application built using Java technologies. Features include user authentication,
+                                    data management, and dynamic content rendering.</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Java</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">Servlet/JSP</span>
+                                    <span
+                                        class="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">MySQL</span>
+                                </div>
+                                <a href="#"
+                                    class="inline-flex items-center text-primary font-bold hover:underline mt-auto">
+                                    View Project <span class="material-icons text-sm ml-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

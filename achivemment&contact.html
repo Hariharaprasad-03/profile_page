@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Hariharaprasad R - Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ffb400",
+                        "background-light": "#f0f0f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Anton", "sans-serif"],
+                        sans: ["Roboto", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-icons {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: 23px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #333;
+            z-index: 0;
+        }
+
+        .dark .timeline-item::before {
+            background-color: #888;
+        }
+
+        .timeline-item:first-child::before {
+            top: 24px;
+        }
+
+        .timeline-item:last-child::before {
+            bottom: 24px;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-sans text-gray-800 dark:text-gray-300">
+    <div class="min-h-screen flex flex-col md:flex-row">
+        <aside class="w-full md:w-64 bg-primary flex flex-col items-center p-8 relative md:fixed md:h-full z-50">
+            <div class="text-center">
+                <div class="relative inline-block mb-6">
+                    <img alt="Portrait of Hariharaprasad R"
+                        class="rounded-full w-36 h-36 object-cover border-4 border-gray-700/10"
+                        src="imgs/profile.jpg" />
+                    <span
+                        class="absolute bottom-2 right-2 block w-4 h-4 bg-green-500 rounded-full border-2 border-primary"></span>
+                </div>
+                <div class="flex justify-center gap-4 mb-6">
+                    <a href="https://www.linkedin.com/in/hariharaprasad-r110703/"
+                        class="text-gray-900 hover:text-white transition-colors"><i
+                            class="fab fa-linkedin text-xl"></i></a>
+                    <a href="https://github.com/Hariharaprasad-03"
+                        class="text-gray-900 hover:text-white transition-colors"><i
+                            class="fab fa-github text-xl"></i></a>
+                    <a href="https://leetcode.com/u/Hariharaprasad_03/"
+                        class="text-gray-900 hover:text-white transition-colors"><i class="fas fa-code text-xl"
+                            title="LeetCode"></i></a>
+                </div>
+                <nav class="flex flex-col space-y-6 text-gray-900 font-medium uppercase text-sm">
+                    <a class="group" href="index.html">
+                        <span class="tracking-wider group-hover:underline">About Me</span>
+                    </a>
+                    <a class="group" href="Experience.html">
+                        <span class="tracking-wider group-hover:underline">Resume</span>
+                    </a>
+                    <a class="group" href="projects.html">
+                        <span class="tracking-wider group-hover:underline">Portfolio</span>
+                    </a>
+                    <a class="flex flex-col items-center space-y-1 group" href="achivemment&contact.html">
+                        <span class="tracking-wider group-hover:underline">Achievements & Contacts</span>
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <main class="flex-1 md:ml-64 p-4 md:p-12">
+            <section class="mb-16" id="leetcode">
+                <h2
+                    class="font-display text-5xl font-bold text-gray-900 dark:text-white mb-12 relative flex items-center">
+                    <span class="w-10 h-1 bg-primary mr-4"></span>
+                    LEETCODE
+                </h2>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <!-- Placeholder for LeetCode Chart/Image -->
+                            <div
+                                class="w-32 h-32 rounded-full border-8 border-primary flex items-center justify-center">
+                                <span class="text-2xl font-bold text-gray-900 dark:text-white">300+</span>
+                            </div>
+                        </div>
+                        <div class="flex-grow grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Easy</p>
+                                <p class="text-2xl font-bold text-green-500">50</p>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Medium</p>
+                                <p class="text-2xl font-bold text-yellow-500">300+</p>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                                <p class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Hard</p>
+                                <p class="text-2xl font-bold text-red-500">85</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-16" id="achievements">
+                <h2
+                    class="font-display text-5xl font-bold text-gray-900 dark:text-white mb-12 relative flex items-center">
+                    <span class="w-10 h-1 bg-primary mr-4"></span>
+                    ACHIEVEMENTS
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center space-x-4">
+                        <div class="bg-primary/20 p-3 rounded-full">
+                            <span class="material-icons text-primary !text-3xl">emoji_events</span>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900 dark:text-white">1st</p>
+                            <p class="text-gray-500 dark:text-gray-400">Coding Contest (GCE-Salem)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center space-x-4">
+                        <div class="bg-primary/20 p-3 rounded-full">
+                            <span class="material-icons text-primary !text-3xl">emoji_events</span>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-gray-900 dark:text-white">1st</p>
+                            <p class="text-gray-500 dark:text-gray-400">Intra-college Hackathon</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16" id="contact">
+                <h2
+                    class="font-display text-5xl font-bold text-gray-900 dark:text-white mb-12 relative flex items-center">
+                    <span class="w-10 h-1 bg-primary mr-4"></span>
+                    CONTACT
+                </h2>
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-8">
+                                Feel free to reach out to me for any inquiries, collaboration opportunities, or just to
+                                say hi!
+                            </p>
+                            <div class="space-y-6">
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+                                        <span class="material-icons">email</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 dark:text-white">Email</p>
+                                        <p class="text-gray-600 dark:text-gray-400">hariharaprasad_03@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+                                        <span class="material-icons">phone</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 dark:text-white">Phone</p>
+                                        <p class="text-gray-600 dark:text-gray-400">+91 6374202368</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+                                        <span class="material-icons">location_on</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-900 dark:text-white">Location</p>
+                                        <p class="text-gray-600 dark:text-gray-400">Thiruppathur, Tamil Nadu, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <form class="space-y-6">
+                                <div>
+                                    <label
+                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border-none focus:ring-2 focus:ring-primary dark:text-white"
+                                        placeholder="Your Name">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                                    <input type="email"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border-none focus:ring-2 focus:ring-primary dark:text-white"
+                                        placeholder="Your Email">
+                                </div>
+                                <div>
+                                    <label
+                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                                    <textarea rows="4"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border-none focus:ring-2 focus:ring-primary dark:text-white"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="button"
+                                    class="w-full bg-primary text-gray-900 font-bold py-3 rounded-lg hover:bg-opacity-90 transition-colors">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Me - Hariharaprasad R</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ffb400",
+                        "background-light": "#f0f0f6",
+                        "background-dark": "#121212",
+                    },
+                    fontFamily: {
+                        display: ["Anton", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background-color: #333;
+        }
+
+        .dark .timeline-line::before {
+            background-color: #888;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-sans text-gray-800 dark:text-gray-300 antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <aside
+                class="w-full md:w-1/4 bg-primary text-gray-900 rounded-lg flex flex-col items-center justify-between p-8 space-y-8">
+                <div class="text-center space-y-4">
+                    <img alt="Hariharaprasad R portrait"
+                        class="w-32 h-32 rounded-full border-4 border-gray-900 object-cover mx-auto"
+                        src="imgs/profile.jpg" />
+                    <div class="flex justify-center gap-4 mt-4">
+                        <a href="#" class="text-gray-900 hover:text-white transition-colors"><i
+                                class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-900 hover:text-white transition-colors"><i
+                                class="fab fa-github text-xl"></i></a>
+                        <a href="#" class="text-gray-900 hover:text-white transition-colors"><i
+                                class="fas fa-code text-xl" title="LeetCode"></i></a>
+                    </div>
+                    <span class="material-icons text-gray-900">arrow_upward</span>
+                    <nav class="flex flex-col space-y-4 text-center">
+                        <a class="uppercase font-bold tracking-wider text-gray-900 border-b-2 border-gray-900 pb-1"
+                            href="index.html">About Me</a>
+                        <a class="uppercase font-bold tracking-wider" href="Experience.html">Resume</a>
+                        <a class="uppercase font-bold tracking-wider" href="projects.html">Portfolio</a>
+                        <a class="uppercase font-bold tracking-wider" href="achivemment&contact.html">Achievements &
+                            Contacts</a>
+                    </nav>
+                </div>
+                <span class="material-icons text-gray-900">arrow_downward</span>
+            </aside>
+            <main class="w-full md:w-3/4 flex">
+                <div class="flex-grow bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 md:p-12 relative">
+                    <div class="flex items-center mb-8">
+                        <div class="h-px bg-gray-900 dark:bg-gray-100 w-12 mr-4"></div>
+                        <h1 class="text-4xl md:text-5xl font-display text-gray-900 dark:text-gray-100 tracking-wider">
+                            ABOUT ME</h1>
+                    </div>
+                    <p class="font-bold text-lg text-gray-900 dark:text-gray-100">I'm Hariharaprasad R, Software
+                        Engineer / Full Stack Developer</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">
+                        Passionate developer with a strong command of Java, Object-Oriented Programming, and Data
+                        Structures. Experienced in building efficient backend functionality and seamless web
+                        applications. I love solving complex problems and have a keen interest in Machine Learning and
+                        Deep Learning.
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+                        <div>
+                            <div
+                                class="inline-block px-4 py-1 bg-primary rounded-full text-gray-900 font-bold text-sm mb-6">
+                                What I Do?</div>
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-3xl text-gray-900">code</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-900 dark:text-gray-100">PROGRAMMING</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Java, C Programming, Python,
+                                            SQL, HTML, CSS, JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-3xl text-gray-900">psychology</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-900 dark:text-gray-100">TECHNICAL SKILLS</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Problem Solving, DSA, Deep
+                                            Learning, OOPS, Machine Learning</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="flex-shrink-0 w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                                        <span class="material-icons text-3xl text-gray-900">web</span>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-900 dark:text-gray-100">WEB DEVELOPMENT</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Full Stack Development,
+                                            Responsive Design, Performance Optimization</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="inline-block px-4 py-1 bg-primary rounded-full text-gray-900 font-bold text-sm mb-6">
+                                Fun Facts</div>
+                            <div class="grid grid-cols-2 grid-rows-3 gap-4">
+                                <div
+                                    class="bg-gray-900 dark:bg-gray-700 rounded-full flex flex-col items-center justify-center aspect-square text-center p-2">
+                                    <div class="text-primary font-display text-4xl">2+</div>
+                                    <div class="text-white text-xs uppercase leading-tight">Projects Completed</div>
+                                </div>
+                                <div
+                                    class="bg-gray-900 dark:bg-gray-700 rounded-full flex flex-col items-center justify-center aspect-square text-center p-2">
+                                    <div class="text-primary font-display text-4xl">5+</div>
+                                    <div class="text-white text-xs uppercase leading-tight">Certifications</div>
+                                </div>
+                                <div
+                                    class="bg-gray-900 dark:bg-gray-700 rounded-full flex flex-col items-center justify-center aspect-square text-center p-2">
+                                    <div class="text-primary font-display text-4xl">1st</div>
+                                    <div class="text-white text-xs uppercase leading-tight">Coding Contest</div>
+                                </div>
+                                <div
+                                    class="bg-gray-900 dark:bg-gray-700 rounded-full flex flex-col items-center justify-center aspect-square text-center p-2">
+                                    <div class="text-primary font-display text-4xl">1st</div>
+                                    <div class="text-white text-xs uppercase leading-tight">Hackathon Winner</div>
+                                </div>
+                                <div
+                                    class="bg-gray-900 dark:bg-gray-700 rounded-full flex flex-col items-center justify-center aspect-square text-center p-2">
+                                    <div class="text-primary font-display text-4xl">2025</div>
+                                    <div class="text-white text-xs uppercase leading-tight">Graduation Year</div>
+                                </div>
+                                <div
+                                    class="bg-gray-900 dark:bg-gray-700 rounded-full flex flex-col items-center justify-center aspect-square text-center p-2">
+                                    <div class="text-primary font-display text-4xl">100%</div>
+                                    <div class="text-white text-xs uppercase leading-tight">Dedication</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-col items-center justify-center space-y-2 ml-4 relative timeline-line">
+                    <span
+                        class="absolute -top-4 w-4 h-4 rounded-full bg-gray-900 dark:bg-gray-100 flex items-center justify-center">
+                        <span class="w-1 h-1 bg-primary rounded-full"></span>
+                    </span>
+                    <a class="w-10 h-10 rounded-full bg-gray-900 dark:bg-gray-700 flex items-center justify-center text-primary z-10 hover:bg-primary hover:text-gray-900 transition-colors"
+                        href="index.html">
+                        <span class="material-icons text-xl">person</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-gray-900 dark:bg-gray-700 flex items-center justify-center text-primary z-10 hover:bg-primary hover:text-gray-900 transition-colors"
+                        href="Experience.html">
+                        <span class="material-icons text-xl">description</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-gray-900 dark:bg-gray-700 flex items-center justify-center text-primary z-10 hover:bg-primary hover:text-gray-900 transition-colors"
+                        href="projects.html">
+                        <span class="material-icons text-xl">work</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-gray-900 dark:bg-gray-700 flex items-center justify-center text-primary z-10 hover:bg-primary hover:text-gray-900 transition-colors"
+                        href="achivemment&contact.html">
+                        <span class="material-icons text-xl">send</span>
+                    </a>
+                    <span
+                        class="absolute -bottom-4 w-4 h-4 rounded-full bg-gray-900 dark:bg-gray-100 flex items-center justify-center">
+                        <span class="w-1 h-1 bg-primary rounded-full"></span>
+                    </span>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
